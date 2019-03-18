@@ -19,8 +19,12 @@ public class MainActivity extends AppCompatActivity {
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                //显示intent
+//                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                //隐式intent
+                Intent intent = new Intent("com.example.administrator.displayintent.ACTION_START");
                 startActivity(intent);
+
             }
         });
     }
